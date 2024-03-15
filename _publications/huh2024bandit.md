@@ -1,5 +1,5 @@
 ---
-title: "PBandit Profit-maximization for Targeted Marketing"
+title: "Bandit Profit-maximization for Targeted Marketing"
 collection: publications
 permalink: /publication/2024-03-03-huh2024bandit
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
