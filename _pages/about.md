@@ -13,4 +13,4 @@ Prior to this, I pursued a Ph.D. in Physics at UW–Madison until 2021 when I tr
 
 Research Interest
 ---
-My current research interests are broadly in the intersection of machine learning, game theory and economics. 
+My current research interests are broadly in the intersection of machine learning, game theory and economics. For more details, see my [publications](https://joon-huh.github.io/publications/).
