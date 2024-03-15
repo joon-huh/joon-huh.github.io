@@ -47,11 +47,11 @@
     {% endif %}
     
     {% if post.citation and post.paperurl %}
-      <a href="{{ post.paperurl }}">Paper</a></p> <p>Recommended citation: {{ post.citation }} 
+      <span><a href="{{ post.paperurl }}">Paper</a> Recommended citation: {{ post.citation }} </span>
     {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+      <span>Recommended citation: {{ post.citation }} </span>
     {% elsif post.paperurl %}
-      <a href=" {{ post.paperurl }} ">Paper</a></p>
+      <span><a href=" {{ post.paperurl }} ">Paper</span>
     {% endif %}
 
   </article>
