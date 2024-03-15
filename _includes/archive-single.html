@@ -28,7 +28,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
+        <a href="{{ post.link }}", style="color:#2c3635;">{{ title }}</a>
       {% else %}
         {{ title }}
       {% endif %}
@@ -51,7 +51,7 @@
     {% elsif post.citation %}
       <span>Recommended citation: {{ post.citation }} </span>
     {% elsif post.paperurl %}
-      <span><a href=" {{ post.paperurl }} ">Paper</span>
+      <span><a href=" {{ post.paperurl }} ">Paper</a></span>
     {% endif %}
 
   </article>
