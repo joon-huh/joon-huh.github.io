@@ -1,5 +1,5 @@
 ---
-title: "Bandit Profit-maximization for Targeted Marketing"
+title: "On The Power of Deep But Naive Partial Label Learning"
 excerpt: 'Junghoon Seo*, Joon Suk Huh*'
 collection: publications
 link: 'https://arxiv.org/pdf/2010.11600.pdf'
