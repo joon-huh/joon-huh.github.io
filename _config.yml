@@ -25,7 +25,7 @@ author:
   name             : "Joon Suk Huh"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student in Computer Science at UW–Madison"
-  location         : "Madison, WI"
+  location         : # "Madison, WI"
   employer         : # "Red Brick University"
   uri              : # URL
   email            : "joon@cs.wisc.edu" 
