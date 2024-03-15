@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Joon Suk Huh"
-author_profile: false
+title: "Personal Webpage"
+author_profile: true
 redirect_from: 
   - /about/
   - /about.html
