@@ -1,41 +1,51 @@
+# Joon Suk Huh
 
-# Academic Pages
+Personal academic website, built with Jekyll and hosted on GitHub Pages.
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+## Local preview
 
-Academic Pages is a Github Pages template for academic websites.
+With Ruby installed, run:
 
+```sh
+sh preview.sh
+```
 
-# Getting Started
+Open <http://localhost:4000>. To check the production build:
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+```sh
+sh preview.sh build
+```
 
-See more info at https://academicpages.github.io/
+No Node.js, npm, JavaScript bundle, icon fonts, or external font services are needed.
+The site uses one CSS file and system fonts. Jekyll and the Markdown, sitemap, and
+redirect plugins are the only build dependencies (plus WEBrick for local serving).
+Core plugin versions follow [GitHub Pages](https://pages.github.com/versions/).
+The script installs Bundler and all gems into `vendor/gems/`, and stores download
+caches and Bundler data under `vendor/` as well. RubyGems, Bundler, and the default
+XDG cache path all point there, not to the home directory. It does not install
+packages globally or change shell settings. `vendor/` is ignored by Git and excluded from
+the site; it can be deleted and recreated by running the script again. The first
+run requires network access and native build tools for some gems.
 
-## Running Locally
+Generated pages go to `/tmp/joon-huh-site`, outside the repository. After a reboot,
+run `sh preview.sh` again to rebuild and start the server using the saved local
+dependencies. GitHub Pages can use its default build destination.
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+## Editing
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+- `_pages/about.md`: biography and research interests.
+- `_publications/*.md`: papers, authors, venues, and PDF links. The publication list
+  groups papers by year, with the newest year first and the newest paper first
+  within each year. `date` must be a valid `YYYY-MM-DD` for sorting; only the year
+  is displayed on the site.
+- `_config.yml`: profile, contact links, and site metadata.
+- `_data/navigation.yml`: navigation links.
+- `assets/css/main.css`: all layout, typography, responsive, and print styles.
+- `images/profile.jpg`: profile photo.
+- `files/Joon Suk Huh CV.pdf`: CV; replace it in place to preserve existing links.
 
+Keep the existing publication filenames to preserve their individual URLs.
+`/about/`, `/about.html`, `/cv/`, and `/resume` remain available.
 
-# Maintenance 
-
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+Originally based on Academic Pages / Minimal Mistakes. The original MIT license
+is retained in `LICENSE`.

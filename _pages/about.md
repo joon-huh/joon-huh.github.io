@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About me"
-author_profile: true
+description: "Joon Suk Huh, Ph.D. student in Computer Science at UW–Madison."
 redirect_from: 
   - /about/
   - /about.html
@@ -11,8 +11,8 @@ Hello! I'm a Ph.D. student in the [Department of Computer Science](https://www.c
 
 Prior to this, I pursued a Ph.D. in Physics at UW–Madison until 2021 when I transferred to the Department of Computer Science. I completed my M.S. in Physics from Northwestern University under the mentorship of [Hyejin Youn](http://hyoun.me/) and B.S. in Physics at the Gwangju Institute of Science and Technology (GIST), South Korea. 
 
-For details, please refer to my [CV](https://joon-huh.github.io/files/cv_joon.pdf).
+For details, please refer to my [CV]({{ '/files/Joon%20Suk%20Huh%20CV.pdf' | relative_url }}).
 
-Research Interest
----
-My current research interests are broadly in the intersection of online machine learning, game theory and mechanism design. For more details, see my [publications](https://joon-huh.github.io/publications/).
+## Research interests
+
+My current research interests are broadly in the intersection of online machine learning, game theory and mechanism design. For more details, see my [publications]({{ '/publications/' | relative_url }}).
